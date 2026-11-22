@@ -614,6 +614,16 @@ footer {
   .footer-inner { grid-template-columns: 1fr; gap: 32px; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
 }
+/* Visible leading dot for ".Experts Corner" */
+.ec-dot {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.4em;
+  font-weight: 700;
+  line-height: 0;
+  color: var(--accent);
+  margin-right: 0.1em;
+  vertical-align: baseline;
+}
 </style>
 </head>
 <body>
@@ -624,7 +634,7 @@ footer {
     <li><a href="#philosophy">Philosophy</a></li>
     <li><a href="#tools">Tools</a></li>
     <li><a href="#nbt">Research</a></li>
-    <li><a href="/experts-corner/" aria-label="Experts Corner">.Experts Corner</a></li>
+    <li><a href="/experts-corner/" aria-label="Experts Corner"><span class="ec-dot" aria-hidden="true">.</span>Experts Corner</a></li>
     <li><a href="/talks/">Talks</a></li>
     <li><a href="https://rjcadvisors.com" target="_blank">RJCadvisors</a></li>
     <li><a href="https://qameditations.com" target="_blank">QA Meditations</a></li>

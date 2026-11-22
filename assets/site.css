@@ -605,3 +605,14 @@ footer {
   .footer-inner { grid-template-columns: 1fr; gap: 32px; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
 }
+
+/* Visible leading dot for ".Experts Corner" */
+.ec-dot {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.4em;
+  font-weight: 700;
+  line-height: 0;
+  color: var(--accent);
+  margin-right: 0.1em;
+  vertical-align: baseline;
+}
