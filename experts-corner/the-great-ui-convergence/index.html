@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Great UI Convergence: What a Five-Minute Test Demo Can Prove | The Automation Expert</title>
+<meta name="description" content="That convergence is useful, and it creates a blind spot for buyers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+.page { padding: 150px 48px 100px; background: linear-gradient(180deg, var(--forest-dark) 0%, #0a1a0f 100%); min-height: 70vh; }
+.page-inner { max-width: 720px; margin: 0 auto; }
+.crumb { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 28px; }
+.crumb a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(200,168,75,0.3); padding-bottom: 2px; }
+.crumb a:hover { color: var(--cream); border-color: var(--cream); }
+.essay h1 { font-family: var(--display); font-size: clamp(30px, 4.4vw, 44px); line-height: 1.2; color: var(--cream); margin-bottom: 36px; }
+.essay h2 { font-family: var(--display); font-size: 25px; line-height: 1.3; color: var(--cream); margin: 48px 0 16px; }
+.essay p { font-family: var(--serif); font-size: 17px; line-height: 1.8; color: var(--text); margin-bottom: 22px; }
+.essay p strong { color: var(--cream); }
+.essay blockquote { border-left: 2px solid var(--accent); padding: 4px 0 4px 22px; margin: 8px 0 26px; font-family: var(--serif); font-style: italic; font-size: 17px; line-height: 1.7; color: var(--cream-dim); }
+.essay code { font-family: var(--mono); font-size: 0.88em; color: var(--accent); background: rgba(200,168,75,0.08); padding: 1px 5px; border-radius: 3px; }
+@media (max-width: 768px) { .page { padding: 120px 24px 80px; } .essay p, .essay blockquote { font-size: 16px; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-brand">The Automation Expert</a>
+  <ul class="nav-links">
+    <li><a href="/#philosophy">Philosophy</a></li>
+    <li><a href="/#tools">Tools</a></li>
+    <li><a href="/#nbt">Research</a></li>
+    <li><a href="/experts-corner/" aria-label="Experts Corner"><span class="ec-dot" aria-hidden="true">.</span>Experts Corner</a></li>
+    <li><a href="/talks/">Talks</a></li>
+    <li><a href="https://rjcadvisors.com" target="_blank">RJCadvisors</a></li>
+    <li><a href="https://qameditations.com" target="_blank">QA Meditations</a></li>
+  </ul>
+</nav>
+
+<main class="page">
+<div class="page-inner">
+  <div class="crumb"><a href="/experts-corner/" aria-label="Back to Experts Corner">&larr; <span class="ec-dot" aria-hidden="true">.</span>Experts Corner</a></div>
+  <article class="essay">
+    <h1>The Great UI Convergence: What a Five-Minute Test Demo Can Prove</h1>
+    <p>A familiar test automation demo begins with a plain-English instruction.</p>
+    <blockquote>Log in with a test account, navigate to the billing portal, update the default payment method, and verify the confirmation banner.</blockquote>
+    <p>A browser spins up, clicks through the flow, and produces a green checkmark.</p>
+    <p>That starting point now shows up in several forms. Functionize’s Create Agent builds test steps and validations from plain language. Cypress can export generated commands or keep <code>cy.prompt</code> in the test so it can adapt at runtime. An engineering team can use an AI client with Playwright’s MCP server to interact with the browser and use Playwright’s Test Agents to generate test files. The same kind of instruction can start each workflow.</p>
+    <p>That convergence is useful, and it creates a blind spot for buyers. Time to first green tells you how quickly you got a check running. It tells you very little about whether you can trust that check as a release gate or what it will cost to operate.</p>
+    <h2>Giving Democratization Its Due</h2>
+    <p>Faster authoring can save real time and money, especially for teams that have struggled to get useful checks into automation. A working first draft gives the team something concrete to review. How much of that savings carries forward depends on what it takes to verify the test, maintain it, and diagnose failures.</p>
+    <p>The prompt also makes two different operating commitments look similar. With a framework-based setup, your team assembles and operates the system around the tests. Playwright already provides sharding, merged reports, and traces. Your team still owns scheduling runs, arranging execution capacity, collecting and retaining artifacts, and putting the results where release owners can find them. Existing CI and reporting services can cover some of that work. Your team owns making those pieces work together.</p>
+    <p>With a managed platform, the subscription can include the execution grid, scheduling, orchestration, and a reporting portal. The provider operates the services included in the plan. Your team still configures the tests, connects its environments, and manages test data. Some offerings split the responsibility. Cypress Cloud, for example, can coordinate runs across machines supplied by your CI setup. The question for the buyer is who owns each part of the operation after the demo.</p>
+    <h2>Put Both Options on the Same Ledger</h2>
+    <p>A fair comparison counts labor on both sides. For a framework-based setup, estimate the engineering hours to build and integrate it, then the recurring hours to keep it running. Include the suite’s share of runner time, artifact storage, and reruns, along with the time someone spends monitoring and managing that cloud spend. An existing tool or cloud account can reduce the setup cost while still taking staff time and capacity to operate.</p>
+    <p>For a managed platform, price the subscription tier that supports your expected workload, including any usage charges. Count the integration, maintenance, and triage your team will still handle. Some of the infrastructure cost and operating work moves into the subscription. How much moves depends on what the provider actually runs for you.</p>
+    <p>Separate one-time setup from recurring cost. Use the same expected run volume, peak concurrency, and evidence retention for both candidates. That gives leadership a comparison between two ways of operating the same release gate.</p>
+    <h2>The Billing Demo’s Blind Spot</h2>
+    <p>Look back at the billing demo. The prompt asked the tool to verify the confirmation banner, and the test found one. Green checkmark.</p>
+    <p>Now run the same test against a build that shows the banner but leaves the old payment method as the default. The test can still go green. It verified the banner exactly as instructed.</p>
+    <p>For the proof of concept, give every candidate the same acceptance criterion. When you reopen billing settings in a fresh session, the new payment method must be the default for that account. Start each run with the old method set as the default. Run the revised test against a known-good build and the broken build. It should pass on the first and fail at the billing assertion on the second. Ask to see which payment method the test expected and which one it actually found.</p>
+    <p>The paired run matters. A test that fails on the broken build because it couldn’t log in has given you a red result and no evidence it caught the billing defect.</p>
+    <p>If someone says, “You just need to write a better prompt,” I agree. Someone still has to know what to put in it. The POC is where you find out whether the resulting test enforces it.</p>
+    <h2>What Your POC Should Prove</h2>
+    <p>A five-minute demo can show how quickly a tool gets through a flow and surface basic compatibility problems. Before you make a buying decision, make each candidate do three things.</p>
+    <p><strong>Catch the defect and show the evidence.</strong> Require a pass on the known-good build and a failure at the billing assertion on the broken build. A release owner should be able to inspect the expected and observed values.</p>
+    <p><strong>Show what changes at runtime.</strong> If a button moves, let the tool show how it adapts. Check that it still applies the same acceptance criterion and leaves a record of any adaptation that affected what it checked.</p>
+    <p><strong>Run under the conditions you’ll actually face.</strong> Repeat the exercise with representative test data and parallel runs where they apply. Record what the provider handles, what your team has to operate, and what each option will cost over a year at the same workload.</p>
+    <p>The first green checkmark earns a candidate a closer look. The paired run and the operating costs give you something to make a decision on.</p>
+    <p>In Part 2, we’ll look beneath the prompt box. What is the tool allowed to change during a run, and what evidence does it leave when it does?</p>
+  </article>
+</div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">The Automation Expert</div>
+      <p class="footer-tagline">A practitioner's guide to enterprise test automation. Tools evaluated from the domain out, not the vendor in.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">The Network</div>
+      <ul class="footer-links">
+        <li><a href="https://rjcadvisors.com" target="_blank">RJCadvisors: People</a></li>
+        <li><a href="https://qameditations.com" target="_blank">QA Meditations: Process</a></li>
+        <li><a href="/#tools">The Stack: Tools</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Connect</div>
+      <ul class="footer-links">
+        <li><a href="mailto:rick@theautomation.expert">rick@theautomation.expert</a></li>
+        <li><a href="https://www.linkedin.com/in/rcavallaro/" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">&copy; 2026 RJCadvisors Inc. &middot; Lawrence, Massachusetts &middot; All rights reserved.</div>
+    <div class="footer-email"><a href="mailto:rick@theautomation.expert">rick@theautomation.expert</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
