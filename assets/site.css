@@ -613,6 +613,6 @@ footer {
   font-weight: 700;
   line-height: 0;
   color: var(--accent);
-  margin-right: 0.1em;
+  margin-right: 0;
   vertical-align: baseline;
 }
