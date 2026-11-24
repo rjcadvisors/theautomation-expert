@@ -1,0 +1,26 @@
+[
+  {
+    "type": "White Paper",
+    "title": "From High-Speed Idiot to High-Speed Yes-Man",
+    "date": "2026-11-24",
+    "blurb": "AI speeds up output while organizations may be weakening the people, incentives and conditions needed to validate it. The paper names the pattern and proposes a position for the human: above the loop.",
+    "url": "/papers/high-speed-yes-man/",
+    "cta": "Read the paper"
+  },
+  {
+    "type": "Essay",
+    "title": "The Great UI Convergence: What a Five-Minute Test Demo Can Prove",
+    "date": "2026-11-22",
+    "blurb": "That convergence is useful, and it creates a blind spot for buyers. Time to first green tells you how quickly you got a check running.",
+    "url": "/experts-corner/the-great-ui-convergence/",
+    "cta": "Read the essay"
+  },
+  {
+    "type": "Talk",
+    "title": "Confirming What You Meant, and What You Never Meant: The Oracle Problem in Agentic Testing",
+    "date": "2026-10-14",
+    "blurb": "Presented to the Software Quality Group of New England, with the Oracle Readiness Screen handout: eight questions to ask before you trust a result from an automated or agentic test.",
+    "url": "/talks/",
+    "cta": "See the talk"
+  }
+]
